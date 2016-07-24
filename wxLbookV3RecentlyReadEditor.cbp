@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wxLbookV3RecentlyReadEditor" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/wxLbookV3RecentlyReadEditor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add option="-D__WXDEBUG__" />
+					<Add directory="include" />
+					<Add option="-DwxUSE_UNICODE" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/wxLbookV3RecentlyReadEditor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-O2" />
+					<Add directory="include" />
+					<Add option="-DwxUSE_UNICODE" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Release Windows MinGW">
+				<Option output="bin/Release/wxLbookV3RecentlyReadEditor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-std=c++11" />
+					<Add option="-pipe" />
+					<Add option="-mthreads" />
+					<Add option="-D__GNUWIN32__" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-DWXUSINGDLL" />
+					<Add option="-DwxUSE_UNICODE" />
+					<Add directory="B:/wxWidgets-3.1.0/include/wx/msw" />
+					<Add directory="B:/wxWidgets-3.1.0/lib/gcc_dll/mswu" />
+					<Add directory="B:/wxWidgets-3.1.0/include" />
+					<Add directory="include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="B:/wxWidgets-3.1.0/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="B:/wxWidgets-3.1.0/lib/gcc_dll" />
+					<Add library="libwxmsw31u_core" />
+					<Add library="libwxbase31u" />
+					<Add library="libwxmsw31u_propgrid" />
+					<Add library="libwxmsw31u_adv" />
+					<Add library="libwxmsw31u_aui" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxzlib.a" />
+					<Add library="libwxmsw31u_propgrid" />
+					<Add library="libwxmsw31u_adv" />
+					<Add library="libwxmsw31u_aui" />
+					<Add library="wxtiff" />
+					<Add library="wxjpeg" />
+					<Add library="wxpng" />
+				</Linker>
+				<Environment>
+					<Variable name="wxDEBUG_LEVEL" value="0" />
+				</Environment>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`wx-config --cflags`" />
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+		</Linker>
+		<Unit filename="MainGUIFrame.cpp" />
+		<Unit filename="MainGUIFrame.h" />
+		<Unit filename="LbookV3RecentlyReadEditorApp.cpp" />
+		<Unit filename="LbookV3RecentlyReadEditorApp.h" />
+		<Unit filename="LbookV3RecentlyReadEditorMain.cpp" />
+		<Unit filename="LbookV3RecentlyReadEditorMain.h" />
+		<Unit filename="WxWizFrame.fbp" />
+		<Unit filename="BookDataViewModel.h" />
+		<Unit filename="BookDataViewModel.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
